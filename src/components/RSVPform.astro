@@ -1,0 +1,35 @@
+---
+import handleRsvpFormSubmission from "../scripts/handleRSVP";
+---
+
+<form id="rsvpForm" onsubmit="handleRsvpFormSubmission">
+    <div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label for="guests">Number of Guests: </label>
+        <input type="number" id="guests" name="guests" required>
+    </div>
+    <div>
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label for="phoneNumber">Phone Number: </label>
+        <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    </div>
+    <div>
+        <ul>
+            <li>
+                <input type="radio" id="accepts" name="response" value="Joyfully Accepts" required>
+                <label for="accepts">Joyfully Accepts</label>
+            </li>
+            <li>
+                <input type="radio" id="declines" name="response" value="Regretfully Declines" required>
+                <label for="declines">Regretfully Declines</label>
+            </li>
+        </ul>
+    </div>
+    <button type="submit">Submit</button>
+</form>

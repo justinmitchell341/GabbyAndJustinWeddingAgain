@@ -2,8 +2,8 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import '../styles/global.css';
-
-const pageTitle = "⭐ My Astro Blog";
+import RSVPform from '../components/RSVPform.astro';
+const pageTitle = "📕 Blog";
 ---
 
 <html lang="en">
@@ -16,14 +16,11 @@ const pageTitle = "⭐ My Astro Blog";
 	</head>
 	<body>
 
-		<Header />
-
-		<h1>{pageTitle}</h1>
-
-		<Footer />
-
+        <Header />
+		<RSVPform />
 		<script>
-			 import "../scripts/menu.js";
-		  </script>
+			import "../scripts/menu.js";
+			import "../scripts/handleRSVP.js";
+		 </script>
 	</body>
 </html>
