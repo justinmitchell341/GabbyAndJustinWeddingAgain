@@ -1,7 +1,8 @@
 ---
-// Any imports or component-level logic can go here
+import handleRsvpFormSubmission from "../scripts/handleRSVP";
 ---
-<form id="rsvpForm">
+
+<form id="rsvpForm" onsubmit="handleRsvpFormSubmission">
     <div>
         <label for="name">Name: </label>
         <input type="text" id="name" name="name" required>
@@ -32,29 +33,3 @@
     </div>
     <button type="submit">Submit</button>
 </form>
-
-<script>
-  const form = document.getElementById('rsvpForm');
-  form.onsubmit = async (e) => {
-    e.preventDefault();
-    const formData = new FormData(form as HTMLFormElement);
-    const data = Object.fromEntries(formData);
-    // The API endpoint should match the route you have defined in your server setup
-    const response = await fetch('/api/rsvp', {
-    method: 'POST',
-    headers: {
-    'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(data)
-  });
-
-
-    if (response.ok) {
-      // Handle success
-      console.log('RSVP submitted successfully');
-    } else {
-      // Handle error
-      console.error('Failed to submit RSVP');
-    }
-  };
-</script>

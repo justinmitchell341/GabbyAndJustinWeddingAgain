@@ -1,48 +1,33 @@
-// src/pages/api/rsvp.js
+import { RsvpTable } from '../../../db/config';
 
-// Import the necessary utilities from your database setup and ORM
-import { db } from 'astro:db';
-import { RsvpTable } from '../../../db/config';  // Adjust this path to accurately point to your config.ts file
-
-export async function POST({ request }) {
+export default async function handler(req, res) {
+  if (req.method === 'POST') {
     try {
-        // First, read the raw body to ensure it is being received correctly
-        const rawBody = await request.text();
-        console.log("Raw request body:", rawBody);
+      // Parse the request body
+      const { name, numberOfGuests, email, phoneNumber, attendance } = JSON.parse(req.body);
 
-        // Parse the JSON from the raw body
-        let body;
-        try {
-            body = JSON.parse(rawBody);
-        } catch (parseError) {
-            console.error("Failed to parse JSON:", parseError);
-            return new Response(JSON.stringify({ message: 'Invalid JSON format.' }), { status: 400 });
-        }
+      // Validate the input
+      if (!name || !numberOfGuests || !email || !phoneNumber || !attendance) {
+        return res.status(400).json({ message: 'All fields are required.' });
+      }
 
-        console.log("Parsed data:", body);
+      // Insert the new RSVP into the database
+      const result = await db.insert(RsvpTable).values({
+        name,
+        numberOfGuests,
+        email,
+        phoneNumber,
+        attendance,
+      });
 
-        // Destructure and validate the necessary fields
-        const { name, guests, email, phoneNumber, response } = body;
-        if (!name || !email || !phoneNumber || !response) {
-            console.log("Validation failed", { name, guests, email, phoneNumber, response });
-            return new Response(JSON.stringify({ message: 'All fields are required and must be correctly formatted.' }), { status: 400 });
-        }
-
-        // Insert the new RSVP into the database
-        const result = await db.insert(RsvpTable).values({
-            name: name, 
-            guests: guests, 
-            email: email, 
-            phoneNumber: phoneNumber, 
-            response: response
-        });
-        console.log("Insert result:", result);
-
-        // If the insertion is successful, send a success response
-        return new Response(JSON.stringify({ message: 'RSVP submitted successfully!', result }), { status: 200 });
+      // If insertion was successful, send a success response
+      res.status(200).json({ message: 'RSVP submitted successfully!', result });
     } catch (error) {
-        console.error("Error in RSVP submission:", error);
-        // Provide a detailed error message in the response
-        return new Response(JSON.stringify({ message: 'Something went wrong.', error: error.message }), { status: 500 });
+      // If there's an error, send an error response
+      res.status(500).json({ message: 'Something went wrong.', error });
     }
+  } else {
+    // If the request method is not POST, send a 405 Method Not Allowed status
+    res.status(405).json({ message: 'Method not allowed' });
+  }
 }
