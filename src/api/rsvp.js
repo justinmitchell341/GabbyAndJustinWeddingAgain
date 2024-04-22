@@ -1,4 +1,5 @@
-import { RsvpTable } from '../../../db/config';
+import { RsvpTable } from '../db/config';
+import { db } from 'astro-db';
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
