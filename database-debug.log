@@ -1,0 +1,3 @@
+12:59:22.757 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+12:59:22.886 [main] INFO com.firebase.server.forge.App$ - Listening at 127.0.0.1:9000
+12:59:41.528 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO com.firebase.core.namespace.NamespaceActor - wedding-website-e943f successfully activated FBKV (SurveyIdle(0)) wait: 105ms, init: 0ms

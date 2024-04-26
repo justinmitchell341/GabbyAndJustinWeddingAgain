@@ -20,7 +20,13 @@ const pageTitle = "📕 Blog";
 		<RSVPform />
 		<script>
 			import "../scripts/menu.js";
-			import "../scripts/handleRSVP.js";
-		 </script>
+			import handleRsvpFormSubmission from '../scripts/handleRSVP.js';
+			const form = document.getElementById('rsvp-form');
+			if (form){
+  				form.addEventListener('submit', handleRsvpFormSubmission);
+				} else {
+  				console.error('Form element not found!');
+				}
+		</script>
 	</body>
 </html>
