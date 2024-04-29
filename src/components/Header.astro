@@ -4,7 +4,13 @@ import Hamburger from './Hamburger.astro';
 ---
 <header>
   <nav>
-    <Hamburger />
+    <Hamburger onclick={toggleMenu}/>
     <Navigation />
   </nav>
 </header>
+<script>
+  function toggleMenu() {
+      let menu = document.querySelector('.menu');
+      menu.classList.toggle('open');
+    }
+</script>

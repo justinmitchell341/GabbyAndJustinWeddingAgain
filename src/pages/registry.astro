@@ -1,0 +1,38 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+import RSVPform from '../components/RSVPform.astro';
+const pageTitle = "Registry";
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+
+    <a class="zola-registry-embed" href="https://www.zola.com/registry/justinandgabriellaseptember7" data-registry-key="justinandgabriellaseptember7">Our Zola Wedding Registry</a>
+    <script>
+    (() => {
+      const scriptId = "zola-wjs";
+      const element = document.getElementsByTagName("script")[0];
+      const parent = element.parentNode;
+
+      if (parent && !document.getElementById(scriptId)) {
+        const script = document.createElement("script");
+        script.id = scriptId;
+        script.async = true;
+        script.src = "https://widget.zola.com/js/widget.js";
+        parent.insertBefore(script, element);
+      }
+    })();
+    </script>
+
+    <Footer />
+  </body>
+</html>
