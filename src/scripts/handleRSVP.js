@@ -1,6 +1,5 @@
-// src/scripts/handleRSVP.js
 import { db } from './firebase.js'; // Import the Firestore database
-import { collection, addDoc } from "firebase/firestore"; // Firestore functions for collections and documents
+import { collection, addDoc, getDocs } from "firebase/firestore"; // Firestore functions for collections and documents
 
 export default async function handleRsvpFormSubmission(event) {
     const form = event.target;
@@ -20,6 +19,23 @@ export default async function handleRsvpFormSubmission(event) {
       console.log("RSVP submitted successfully, document ID: ", docRef.id);
       form.reset();
     } catch (e) {
-      console.error("Error submitting RSVP: ", e);
+      console.error("Error submitting RSVP: ", e.message);
+      console.error("Error details: ", e);
     }
 }
+
+async function testFirestoreConnection() {
+    try {
+        console.log("Testing Firestore connection...");
+        const querySnapshot = await getDocs(collection(db, "rsvps"));
+        querySnapshot.forEach((doc) => {
+            console.log(`${doc.id} => ${doc.data()}`);
+        });
+        console.log("Firestore connection test successful.");
+    } catch (e) {
+        console.error("Error connecting to Firestore: ", e.message);
+        console.error("Error details: ", e);
+    }
+}
+
+testFirestoreConnection();
