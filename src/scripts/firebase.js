@@ -1,22 +1,17 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
-import { getDatabase } from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCbZWdtF2CPA77kQRi6xJ52jDn81fF28PI",
-  authDomain: "wedding-website-e943f.firebaseapp.com",
-  projectId: "wedding-website-e943f",
-  storageBucket: "wedding-website-e943f.appspot.com",
-  messagingSenderId: "914847142104",
-  appId: "1:914847142104:web:1b2d8f0d45be398b8087ad",
-  measurementId: "G-47CR3MZ1KR"
+  apiKey: import.meta.env.PUBLIC_FIREBASE_API_KEY,
+  authDomain: import.meta.env.PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.PUBLIC_FIREBASE_APP_ID,
+  measurementId: import.meta.env.PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
-const auth = getAuth(app);
-const rtdb = getDatabase(app);
 
-export { db, auth, rtdb };
+export { db };
