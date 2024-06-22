@@ -174,6 +174,7 @@ footer {
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     bottom: 0;
     width: 100%;
+    font-size: 1.5em;
 }
 
 .registry {
@@ -333,8 +334,8 @@ footer {
     width: 100%;
     max-height: 500px;
     overflow: hidden;
+    margin-bottom: 0; /* Add this line to remove bottom margin */
 }
-
 .hero img {
     width: 100%;
     height: auto;
@@ -343,7 +344,7 @@ footer {
 
 .hero-overlay {
     position: absolute;
-    bottom: -200px; /* Adjust to overlap the next section */
+    bottom: -100px; /* Adjust to overlap the next section */
     left: 20px;
     z-index: 10; /* Ensure the text is above other elements */
 }
@@ -355,41 +356,93 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1;
+    padding-top: 20px;
+    padding-right: 20px;
 }
 
 .venue-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
     max-width: 1280px;
     margin: 0 auto;
-    z-index: 1; /* Ensure content appears below the hero text */
+    z-index: 1;
     position: relative;
 }
 
 .venue-details {
-    width: 60%;
+    width: 100%;
+    order: 1;
+    text-align: justify;
 }
 
 .venue-details h3 {
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 5em;
+    margin: 0; /* Change this to 0 to remove extra margin */
+    color: #5A86AD;
 }
 
 .venue-details p {
-    line-height: 1.6;
-    margin-bottom: 20px;
+    text-align: justify;
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    line-height: 30px;
 }
 
-.venue-image {
-    width: 35%;
+.imageandp1 img {
+    float: right; /* Move the first image to the right */
+    max-width: 35%;
+    margin: 0 0 20px 20px; /* Adjust margin to create space between text and image */
+    max-height: 350px;
+}
+
+.imageandp2 img {
+    float: left; /* Ensure the second image stays on the left */
+    max-width: 35%;
+    margin: 0 20px 20px 0; /* Adjust margin to create space between text and image */
+}
+.venue-info {
+    background-color: #5A86AD;
+    color: #fff;
+    padding: 40px 0;
     text-align: center;
+    margin-top: 3%;
 }
 
-.venue-image img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.venue-info-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.venue-info-image {
+    max-width: 50%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 200px;
+    margin: 0 50px;
+}
+
+.venue-info-details {
+    text-align: left;
+    max-width: 40%;
+    padding-left: 20px;
+}
+
+.venue-info-details p {
+    margin: 0 0 0 0;
+    font-size: 1.5em;
+}
+
+.map-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #5A86AD;
+    padding: 15px 30px;
+    font-size: 1.75em;
+    cursor: pointer;
+    font-family: 'Amiri', serif;
+    width: 100%;
+}
+
+.map-button:hover {
+    background-color: #e0e0e0;
 }
