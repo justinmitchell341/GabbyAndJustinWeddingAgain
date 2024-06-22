@@ -389,14 +389,15 @@ footer {
 .imageandp1 img {
     float: right; /* Move the first image to the right */
     max-width: 35%;
-    margin: 0 0 20px 20px; /* Adjust margin to create space between text and image */
+    margin-left: 60px;
+    margin-bottom: 30px; /* Adjust margin to create space between text and image */
     max-height: 350px;
 }
 
 .imageandp2 img {
     float: left; /* Ensure the second image stays on the left */
     max-width: 35%;
-    margin: 0 20px 20px 0; /* Adjust margin to create space between text and image */
+    margin-right: 60px; /* Adjust margin to create space between text and image */
 }
 .venue-info {
     background-color: #5A86AD;
