@@ -1,0 +1,77 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+    font-family: 'Great Vibes', serif;
+    padding-right: 40px;
+}
+
+.hero-overlay .name {
+    font-size: 10em;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.hero-overlay .ampersand {
+    font-size: 20em;
+    position: absolute;
+    right: 0;
+    bottom: -300px;
+    z-index: 2;
+    opacity: 0.5;
+    color: transparent;
+    background: white;
+    -webkit-background-clip: text;
+}
+
+.accommodations {
+    padding: 40px 20px;
+}
+
+.hotel {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.hotel-image {
+    width: 35%;
+    margin-right: 20px;
+}
+
+.hotel-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-details {
+    width: 65%;
+}
+
+.hotel-details h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #5A86AD;
+}
+
+.hotel-details p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
