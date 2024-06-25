@@ -40,11 +40,12 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 20px;
+    font-size: 1.5em;
 }
 
 header h1 {
@@ -84,10 +85,10 @@ nav ul li a {
 
 .countdown div {
     text-align: center;
-    background-color: #333;
     color: #fff;
     padding: 10px 20px;
     font-family: 'Amiri', serif;
+    border: 2px solid #fff  ;
 }
 
 .hero {
@@ -224,12 +225,12 @@ footer {
     text-align: center;
     cursor: pointer;
     font-family: 'Amiri', serif;
+    border: none;
 }
 
 .buttons button {
     background-color: #fff;
     color: #000;
-    border: 2px solid #5A86AD;
     padding: 15px 30px;
     font-size: 1.2em;
     cursor: pointer;
@@ -239,7 +240,6 @@ footer {
 .buttons button:hover {
     background-color: #fff;
     color: #333;
-    border: 2px solid #333;
 }
 .wedding-details {
     text-align: left;

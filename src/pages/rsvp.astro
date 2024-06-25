@@ -1,32 +1,32 @@
 ---
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import '../styles/global.css';
+import '../styles/RSVP.css';
 import RSVPform from '../components/RSVPform.astro';
-const pageTitle = "📕 Blog";
+const pageTitle = "R.S.V.P.";
+import '../styles/global.css'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-
-        <Header />
+<body>
+	<Header />
+	<section class="hero">
+		<img src="/Kiss.jpg" alt="Kiss">
+		<div class="hero-overlay">
+			<h1 class="hero-text">R.S.V.P.</h1>
+		</div>
+	</section>
+	<main>
 		<RSVPform />
-		<script>
-			import "../scripts/menu.js";
-			import handleRsvpFormSubmission from '../scripts/handleRSVP.js';
-			const form = document.getElementById('rsvp-form');
-			if (form){
-  				form.addEventListener('submit', handleRsvpFormSubmission);
-				} else {
-  				console.error('Form element not found!');
-				}
-		</script>
-	</body>
+	</main>
+	<Footer />
+	<script>
+		import handleRsvpFormSubmission from '../scripts/handleRSVP.js';
+		const form = document.getElementById('rsvp-form');
+		if (form){
+			form.addEventListener('submit', handleRsvpFormSubmission);
+		} else {
+			console.error('Form element not found!');
+		}
+	</script>
+</body>
 </html>
