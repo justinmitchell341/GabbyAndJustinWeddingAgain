@@ -1,0 +1,29 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+const pageTitle = "Our Wedding Registry";
+import '../styles/registry.css';
+---
+
+<MainLayout pageTitle={pageTitle}>
+  <section class="registry">
+    <a class="zola-registry-embed" href="www.zola.com/wedding/justinandgabriellaseptember7" data-registry-key="justinandgabriellaseptember7" data-max-items="50"></a>
+    <script>
+        !function(e,t,n){
+          var s,a=e.getElementsByTagName(t)[0];
+          e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))
+        }(document,"script","zola-wjs");
+  
+        // Adjust iframe height after it loads
+        function adjustIframeHeight() {
+          const iframe = document.querySelector('.zola-registry-iframe');
+          if (iframe) {
+            iframe.style.height = '2000px'; // Adjust this height as needed
+          }
+        }
+  
+        document.addEventListener('DOMContentLoaded', function() {
+          // Wait a bit to ensure the iframe is fully loaded
+          setTimeout(adjustIframeHeight, 2000);
+        });
+      </script>
+</MainLayout>

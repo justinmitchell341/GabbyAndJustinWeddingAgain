@@ -1,0 +1,46 @@
+.registry {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #5A86AD; /* Match the background color with the rest of your design */
+    color: #fff;
+    width: 100%;
+}
+  
+  .registry h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+  
+  .registry-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .zola-registry-embed {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+  
+  .zola-registry-embed:hover {
+    background-color: #e7e7e7;
+  }
+  
+  /* Override the iframe height */
+.zola-registry-iframe {
+    height: 2000px !important; /* Adjust the height as needed */
+  }
