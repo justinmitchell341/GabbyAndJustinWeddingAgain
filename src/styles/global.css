@@ -38,6 +38,11 @@ header {
     z-index: 1000;
 }
 
+.pclark{
+    color: #5A86AD;
+    font-weight: bold;
+}
+
 .header-content {
     display: flex;
     justify-content: center;
@@ -129,6 +134,7 @@ nav ul li a {
     z-index: 2; /* Lower z-index to be behind the names */
     opacity: 0.5; /* Slightly opaque */
     color: transparent;
+    padding-right: 50px;
     background: white;
     -webkit-background-clip: text;
 }
@@ -154,10 +160,16 @@ main {
     margin: 0% 10% 0% 10%;
     text-align: left;
 }
+.intro-content p{
+    margin-bottom: 0px;
+    margin-top: 6px;
+    line-height: 35px;
+}
 .love{
     text-align: right;
     font-style: italic;
     font-size: 1.5em;
+    font-family: 'Great Vibes', serif;
 }
 
 .intro {
@@ -181,7 +193,6 @@ footer {
 .registry {
     display: inline-flex;
     justify-content: space-between;
-    align-items: center;
     text-align: left;
     max-width: 1280px;
     position: relative;
@@ -195,19 +206,25 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 .registry-content {
     width: 50%;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 1.2em;
     padding: 20px;
     color: #fff;
+    line-height: 35px;
+    
 }
 
 .registry-content p {
     margin: 20px 20px 20px 20px;
     font-size: 1.25em; /* Increase the font size */
+    margin-top: 6px;
+    margin-bottom: 0px;
 }
 
 .registry-image-wrapper {
@@ -235,11 +252,12 @@ footer {
     font-size: 1.2em;
     cursor: pointer;
     font-family: 'Amiri', serif;
+    border-radius: 5px;
 }
 
 .buttons button:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: #D58A94;
+    color: #fff;
 }
 .wedding-details {
     text-align: left;
@@ -248,6 +266,7 @@ footer {
     position: relative;
     padding-bottom: 5%;
     padding-top: 5%;
+    line-height: 15px;
 
 }
 .detailsAndTitle{
@@ -293,6 +312,14 @@ footer {
     font-size: 1.5em;
     padding: 15px 30px;
     font-family: 'Amiri', serif;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+.hotels-button{
+    box-shadow: 3px 5px 9px #5b7790
+}
+.hotels-button:hover {
+    background-color: #D58A94;
 }
 
 .details-image-wrapper {
@@ -332,7 +359,6 @@ footer {
 .hero {
     position: relative;
     width: 100%;
-    max-height: 500px;
     overflow: hidden;
     margin-bottom: 0; /* Add this line to remove bottom margin */
 }
@@ -344,8 +370,8 @@ footer {
 
 .hero-overlay {
     position: absolute;
-    bottom: -100px; /* Adjust to overlap the next section */
     left: 20px;
+    padding-right: 40px; /* Add padding to prevent text from being cut off */
     z-index: 10; /* Ensure the text is above other elements */
 }
 
@@ -357,7 +383,7 @@ footer {
     -webkit-text-fill-color: transparent;
     line-height: 1;
     padding-top: 20px;
-    padding-right: 20px;
+    padding-right: 40px;
 }
 
 .venue-content {
@@ -442,8 +468,42 @@ footer {
     cursor: pointer;
     font-family: 'Amiri', serif;
     width: 100%;
+    box-shadow: 3px 5px 9px #5b7790
 }
 
 .map-button:hover {
-    background-color: #e0e0e0;
+    background-color: #D58A94;
+}
+
+.hero-venue {
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.hero-venue img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-overlay-venue {
+    position: absolute;
+    bottom: -150px; /* Adjust to desired position */
+    right: -30px; /* Adjust to desired position */
+    text-align: right; /* Align text to the right */
+    padding-right: 40px; /* Add padding to prevent text from being cut off */
+}
+
+.hero-text-venue {
+    font-size: 10em;
+    font-family: 'Great Vibes', serif;
+    background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
 }

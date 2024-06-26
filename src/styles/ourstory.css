@@ -3,6 +3,7 @@
     font-size: 1.5em;
     color: #fff;
     padding: 20px;
+    margin-top:0px;
 }
 
   
@@ -41,3 +42,24 @@
     column-count: 4;
     column-gap: 10px;
   }
+
+  .hero-overlay-story {
+    position: absolute;
+    bottom: -110px; /* Adjust to desired position */
+    right: -30px; /* Adjust to desired position */
+    text-align: right; /* Align text to the right */
+    padding-right: 40px; /* Add padding to prevent text from being cut off */
+}
+
+.hero-text-story {
+    font-size: 10em;
+    font-family: 'Great Vibes', serif;
+    background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
