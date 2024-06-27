@@ -70,3 +70,13 @@
     border: none;
     overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  .hero-overlay {
+      bottom: 10px;
+      right: 10px;
+  }
+  .hero-text {
+      font-size: 5em;
+  }
+}

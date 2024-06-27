@@ -89,3 +89,14 @@ input[type="radio"] {
 .button-div{
     text-align: right;
 }
+
+@media (max-width: 768px) {
+    .hero-overlay-rsvp {
+        bottom: 10px;
+        right: 10px;
+    }
+    .hero-text-rsvp {
+        font-size: 5em;
+        padding-right: 20px;
+    }
+}

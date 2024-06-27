@@ -545,3 +545,151 @@ footer p{
 a{
     text-decoration: none;
 }
+
+.hamburger-icon {
+    display: none;
+    width: 30px; /* Adjust size as needed */
+    cursor: pointer;
+}
+#nav-menu {
+    display: none; /* Initially hide the menu */
+  }
+  
+  #nav-menu.open {
+    display: block; /* Show the menu when the open class is added */
+  }
+
+@media (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+    header {
+        font-size: 1em;
+    }
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-overlay .name {
+        font-size: 5em;
+    }
+    .hero-overlay .ampersand {
+        font-size: 10em;
+        bottom: -150px;
+    }
+    .intro-content, .registry-content, .details-content {
+        padding: 10px;
+    }
+    .details-wrapper {
+        flex-direction: column;
+    }
+    .details-image-wrapper {
+        width: 100%;
+    }
+    .details-image-background {
+        display: none;
+    }
+    .hero-text {
+        font-size: 5em;
+    }
+    .countdown {
+        flex-direction: column;
+    }
+    .countdown div {
+        width: 100%;
+    }
+    .intro-content p {
+        margin: 0 5%;
+    }
+    .imageandp1 img, .imageandp2 img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    .registry {
+        flex-direction: column;
+    }
+    .registry-content, .registry-image-wrapper {
+        width: 100%;
+    }
+    .registry-image-wrapper {
+        height: auto;
+    }
+    .wedding-details h2 {
+        font-size: 2em;
+    }
+    .map-button, .hotels-button {
+        width: 100%;
+    }
+    .venue-info-content {
+        flex-direction: column;
+    }
+    .venue-info-image, .venue-info-details {
+        max-width: 100%;
+    }
+    .venue-details h3 {
+        font-size: 3em;
+    }
+    .venue-details p {
+        font-size: 1.2em;
+    }
+    .hero-venue img {
+        max-height: 300px;
+    }
+    .hero-text-venue {
+        font-size: 5em;
+    }
+    #global-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #fff;
+        z-index: 1000;
+        padding: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        width: 100%;
+        display: block;
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+    .countdown {
+        display: none;
+    }
+}
