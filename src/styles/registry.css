@@ -1,7 +1,30 @@
+.hero-registry img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay-registry {
+  position: absolute;
+  bottom: 180px; /* Adjust to overlap the next section */
+  right: 600px; /* Adjust to move the text to the right */
+  z-index: 10; /* Ensure the text is above other elements */
+}
+
+.hero-text-registry {
+  font-size: 10em;
+  font-family: 'Great Vibes', serif;
+  background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
 .registry {
-    text-align: center;
-    padding: 40px 0;
-    background-color: #5A86AD; /* Match the background color with the rest of your design */
     color: #fff;
     width: 100%;
     margin: 40px 0px 40px 0px;
@@ -41,3 +64,9 @@
     background-color: #e7e7e7;
   }
   
+  .zola-registry-iframe {
+    height: auto; /* Adjust height as needed */
+    width: 100%;
+    border: none;
+    overflow: hidden;
+}

@@ -142,7 +142,7 @@ nav ul li a {
 
 
 main {
-    padding: 100px 0px 0px; /* Adjusted padding to account for fixed header */
+    padding-top: 100px; /* Adjusted padding to account for fixed header */
     max-width: 1280px; 
     margin: 0 auto;
     background-color: #fff;

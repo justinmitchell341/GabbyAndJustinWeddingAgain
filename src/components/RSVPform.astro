@@ -1,36 +1,34 @@
 ---
 import handleRsvpFormSubmission from "../scripts/handleRSVP";
 ---
-
+<div class="form-div">
 <form id="rsvp-form" onsubmit="handleRsvpFormSubmission(event)">
-    <h2>R.S.V.P.</h2>
-    <div>
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name" required>
-    </div>
-    <div>
-        <label for="guests">Number of Guests: </label>
-        <input type="number" id="guests" name="guests" required>
-    </div>
-    <div>
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" required>
-    </div>
-    <div>
-        <label for="phoneNumber">Phone Number: </label>
-        <input type="tel" id="phoneNumber" name="phoneNumber" required>
-    </div>
-    <div>
-        <ul>
-            <li>
-                <input type="radio" id="accepts" name="response" value="Joyfully Accepts" required>
-                <label for="accepts">Joyfully Accepts</label>
-            </li>
-            <li>
-                <input type="radio" id="declines" name="response" value="Regretfully Declines" required>
-                <label for="declines">Regretfully Declines</label>
-            </li>
-        </ul>
-    </div>
-    <button type="submit" id="global-button">Submit</button>
-</form>
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="guests">Number of Guests: </label>
+            <input type="number" id="guests" name="guests" required>
+        </div>
+        <div class="form-group">
+            <label for="number">Phone Number: </label>
+            <input type="text" id="number" name="number" required>
+        </div>
+        <div class="form-group">
+            <ul class="radio-group">
+                <li>
+                    <input type="radio" id="accepts" name="response" value="Joyfully Accepts" required>
+                    <label for="accepts">Joyfully accepts</label>
+                </li>
+                <li>
+                    <input type="radio" id="declines" name="response" value="Regretfully Declines" required>
+                    <label for="declines">Regretfully declines</label>
+                </li>
+            </ul>
+        </div>
+        <div class="button-div">
+        <button type="submit" class="submit-button">Submit</button>
+        </div>
+    </form>
+</div>
