@@ -1,16 +1,16 @@
 /* RSVP Page Styles */
-.hero {
+.hero-rsvp {
     position: relative;
     overflow: hidden; /* Ensure the hero section contains all elements */
 }
 
-.hero img {
+.hero-rsvp img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.hero-overlay {
+.hero-overlay-rsvp {
     position: absolute;
     bottom: 20px; /* Adjust as needed */
     right: 20px; /* Adjust as needed */
@@ -19,7 +19,7 @@
     padding-right: 40px; /* Add padding to prevent text from being cut off */
 }
 
-.hero-overlay .hero-text {
+.hero-overlay-rsvp .hero-text {
     font-size: 10em;
     margin: 0;
     position: relative; /* Ensure it's above the ampersand */

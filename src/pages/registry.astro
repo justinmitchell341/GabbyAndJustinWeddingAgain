@@ -13,14 +13,6 @@ import '../styles/registry.css';
           e.getElementById(n)||(s=e.createElement(t),s.id=n,s.async=!0,s.src="https://widget.zola.com/js/widget.js",a.parentNode.insertBefore(s,a))
         }(document,"script","zola-wjs");
   
-        // Adjust iframe height after it loads
-        function adjustIframeHeight() {
-          const iframe = document.querySelector('.zola-registry-iframe');
-          if (iframe) {
-            iframe.style.height = '2000px'; // Adjust this height as needed
-          }
-        }
-  
         document.addEventListener('DOMContentLoaded', function() {
           // Wait a bit to ensure the iframe is fully loaded
           setTimeout(adjustIframeHeight, 2000);

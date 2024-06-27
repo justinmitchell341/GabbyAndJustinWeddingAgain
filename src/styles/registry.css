@@ -4,6 +4,7 @@
     background-color: #5A86AD; /* Match the background color with the rest of your design */
     color: #fff;
     width: 100%;
+    margin: 40px 0px 40px 0px;
 }
   
   .registry h2 {
@@ -40,7 +41,3 @@
     background-color: #e7e7e7;
   }
   
-  /* Override the iframe height */
-.zola-registry-iframe {
-    height: 2000px !important; /* Adjust the height as needed */
-  }

@@ -36,6 +36,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
+    font-size: 1.2em;
 }
 
 .pclark{
@@ -83,17 +84,17 @@ nav ul li a {
     display: flex;
     justify-content: center;
     gap: 15px;
-    font-size: 1em;
+    font-size: 1.2em;
     font-family: 'Amiri', serif;
     margin-top: 10px;
 }
 
 .countdown div {
     text-align: center;
-    color: #fff;
+    color: #000;
     padding: 10px 20px;
     font-family: 'Amiri', serif;
-    border: 2px solid #fff  ;
+    border: 2px solid #5A86AD  ;
 }
 
 .hero {
@@ -169,6 +170,7 @@ main {
     font-style: italic;
     font-size: 1.5em;
     font-family: 'Great Vibes', serif;
+    line-height: 20px;
 }
 
 .intro {
@@ -183,12 +185,14 @@ footer {
     background-color: #fff;
     text-align: center;
     padding: 10px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     bottom: 0;
     width: 100%;
     font-size: 1.5em;
 }
 
+footer p{
+    margin-top: 0px;
+}
 .registry {
     display: inline-flex;
     justify-content: space-between;
@@ -222,7 +226,6 @@ footer {
 .registry-content p {
     margin: 20px 20px 20px 20px;
     font-size: 1.25em; /* Increase the font size */
-    margin-top: 6px;
     margin-bottom: 0px;
 }
 
@@ -306,17 +309,19 @@ footer {
     font-size: 1em;
     cursor: pointer;
     margin-bottom: 10px;
-    display: block;
-    width: 80%;
+    width: 50%;
     text-align: center;
     font-size: 1.5em;
     padding: 15px 30px;
     font-family: 'Amiri', serif;
     border-radius: 5px;
     border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hotels-button{
-    box-shadow: 3px 5px 9px #5b7790
+    box-shadow: 3px 5px 9px #2e4559;
 }
 .hotels-button:hover {
     background-color: #D58A94;
@@ -348,7 +353,7 @@ footer {
 }
 
 .venue {
-    padding: 20px;
+    padding: 20px 10%;
     background-color: #fff;
     font-family: 'Amiri', serif;
     max-width: 1280px;
@@ -443,9 +448,17 @@ footer {
 
 .venue-info-image {
     max-width: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #2e4559;
     max-height: 200px;
     margin: 0 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.venue-details img{
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .venue-info-details {
@@ -462,17 +475,19 @@ footer {
 .map-button {
     background-color: #fff;
     color: #000;
-    border: 2px solid #5A86AD;
+    border: 1px solid #000;
     padding: 15px 30px;
-    font-size: 1.75em;
+    font-size: 1.5em;
     cursor: pointer;
     font-family: 'Amiri', serif;
     width: 100%;
-    box-shadow: 3px 5px 9px #5b7790
+    box-shadow: 3px 5px 9px #2e4559;
+    border-radius: 5px;
 }
 
 .map-button:hover {
     background-color: #D58A94;
+    color: #fff;
 }
 
 .hero-venue {
@@ -506,4 +521,27 @@ footer {
     padding-right: 50px;
     padding-top: 20px;
     padding-left: 10px;
+}
+
+#global-button{
+    background-color: #5A86AD;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 1.25em;
+    padding: 15px 30px;
+    font-family: 'Amiri', serif;
+    border-radius: 5px;
+    box-shadow: 3px 5px 9px #5b7790;
+}
+#global-button:hover {
+    background-color: #D58A94;
+}
+
+a{
+    text-decoration: none;
 }
