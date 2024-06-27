@@ -64,8 +64,8 @@
         margin: 10px 0;
     }
     .hero-overlay-faq {
-        bottom: 10px;
-        right: 10px;
+        bottom: -60px;
+        left: 450px;
     }
     .hero-text-faq {
         font-size: 5em;

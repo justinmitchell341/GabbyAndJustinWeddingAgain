@@ -551,15 +551,15 @@ a{
     width: 30px; /* Adjust size as needed */
     cursor: pointer;
 }
-#nav-menu {
-    display: none; /* Initially hide the menu */
-  }
-  
-  #nav-menu.open {
-    display: block; /* Show the menu when the open class is added */
-  }
 
 @media (max-width: 768px) {
+    #nav-menu {
+        display: none; /* Initially hide the menu */
+      }
+      
+      #nav-menu.open {
+        display: block; /* Show the menu when the open class is added */
+      }
     .hamburger-icon {
         display: block;
     }
@@ -641,6 +641,10 @@ a{
     }
     .hero-text-venue {
         font-size: 5em;
+    }
+    .hero-overlay-venue{
+        bottom: -70px;
+        right: 0px;
     }
     #global-button {
         font-size: 1em;

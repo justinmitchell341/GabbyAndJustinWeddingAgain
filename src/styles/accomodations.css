@@ -132,4 +132,8 @@
     .accommodations p {
         margin: 10px 5%;
     }
+    .hero-overlay{
+        bottom: -75px;
+
+    } 
 }

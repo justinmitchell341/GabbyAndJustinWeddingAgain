@@ -79,4 +79,8 @@
   .hero-text {
       font-size: 5em;
   }
+  .hero-overlay-registry {
+    bottom: 600px;
+    right: -75px;
+  }
 }

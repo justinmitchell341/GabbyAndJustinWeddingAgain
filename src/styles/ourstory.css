@@ -177,6 +177,9 @@ img.hover-shadow {
 }
 
 @media (max-width: 768px) {
+  .story{
+    margin-bottom: 20px;
+  }
   .story p {
       font-size: 1em;
       margin: 0 5%;
@@ -185,8 +188,8 @@ img.hover-shadow {
       column-count: 1;
   }
   .hero-overlay-story {
-      bottom: 10px;
-      right: 10px;
+      bottom: 0px;
+      right: -60px;
   }
   .hero-text-story {
       font-size: 5em;
