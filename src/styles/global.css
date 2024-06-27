@@ -607,10 +607,10 @@ a{
     }
     .imageandp1 img, .imageandp2 img {
         max-width: 100%;
-        margin: 20px 0;
+        
     }
     .registry {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .registry-content, .registry-image-wrapper {
         width: 100%;
