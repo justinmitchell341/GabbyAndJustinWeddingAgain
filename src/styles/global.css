@@ -39,6 +39,12 @@ header {
     z-index: 1000;
     font-size: 1.2em;
 }
+.heroBG{
+    background-image: url('/JustinAndGabbyLake.jpg');
+    height: 975px;
+    background-size: contain;
+
+}
 
 .pclark{
     color: #5A86AD;
@@ -419,7 +425,7 @@ footer p{
 }
 
 .venue-details p {
-    text-align: justify;
+    text-align: left;
     margin: 0 0 20px 0;
     font-size: 1.5em;
     line-height: 30px;
