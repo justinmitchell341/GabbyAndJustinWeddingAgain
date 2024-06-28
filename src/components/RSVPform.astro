@@ -5,15 +5,15 @@ import handleRsvpFormSubmission from "../scripts/handleRSVP";
 <form id="rsvp-form" onsubmit="handleRsvpFormSubmission(event)">
         <div class="form-group">
             <label for="name">Name: </label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="First Name & Last Name" required>
         </div>
         <div class="form-group">
             <label for="guests">Number of Guests: </label>
-            <input type="number" id="guests" name="guests" required>
+            <input type="number" id="guests" name="guests" placeholder="2" required>
         </div>
         <div class="form-group">
             <label for="number">Phone Number: </label>
-            <input type="text" id="number" name="number" required>
+            <input type="text" id="number" name="number" placeholder="999-999-9999" required>
         </div>
         <div class="form-group">
             <ul class="radio-group">

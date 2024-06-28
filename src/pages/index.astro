@@ -4,9 +4,10 @@ import Hero from '../components/Hero.astro';
 import Intro from '../components/Intro.astro';
 import WeddingDetails from '../components/WeddingDetails.astro';
 import HomeRegistry from '../components/HomeRegistry.astro';
+const title = "Gabriella & Justin's Wedding";
 ---
 
-<MainLayout>
+<MainLayout title={title}>
     <Hero />
     <Intro />
     <WeddingDetails />

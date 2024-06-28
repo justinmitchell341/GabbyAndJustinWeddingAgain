@@ -52,6 +52,7 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 header h1 {
@@ -165,6 +166,9 @@ main {
     margin-top: 6px;
     line-height: 35px;
 }
+.intro-content h2{
+    margin-top: 20px;
+}
 .love{
     text-align: right;
     font-style: italic;
@@ -188,6 +192,9 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 1.5em;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
 }
 
 footer p{
@@ -227,6 +234,7 @@ footer p{
     margin: 20px 20px 20px 20px;
     font-size: 1.25em; /* Increase the font size */
     margin-bottom: 0px;
+    margin-left: 75px;
 }
 
 .registry-image-wrapper {
@@ -256,6 +264,7 @@ footer p{
     cursor: pointer;
     font-family: 'Amiri', serif;
     border-radius: 5px;
+    border: 1px solid #000;
 }
 
 .buttons button:hover {
@@ -483,6 +492,7 @@ footer p{
     width: 100%;
     box-shadow: 3px 5px 9px #2e4559;
     border-radius: 5px;
+    padding-bottom: 20px;
 }
 
 .map-button:hover {
@@ -553,6 +563,9 @@ a{
 }
 
 @media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
     #nav-menu {
         display: none; /* Initially hide the menu */
       }
@@ -570,6 +583,9 @@ a{
         flex-direction: column;
         text-align: center;
     }
+    .love{
+        padding-bottom: 10px;
+    }
     nav ul {
         flex-direction: column;
         gap: 10px;
@@ -580,6 +596,9 @@ a{
     .hero-overlay .ampersand {
         font-size: 10em;
         bottom: -150px;
+    }
+    .intro-content h2{
+        margin-bottom: 10px;
     }
     .intro-content, .registry-content, .details-content {
         padding: 10px;
@@ -609,6 +628,9 @@ a{
         max-width: 100%;
         
     }
+    .imageandp2 img{
+        margin-bottom: 20px;
+    }
     .registry {
         flex-direction: column-reverse;
     }
@@ -618,6 +640,14 @@ a{
     .registry-image-wrapper {
         height: auto;
     }
+    .registry-image{
+        margin-top: 20px;
+        background-color: #fff;
+    }
+    .registry-image img {
+        margin-top: 20px;
+        background-color: #fff;
+    }
     .wedding-details h2 {
         font-size: 2em;
     }
@@ -625,10 +655,12 @@ a{
         width: 100%;
     }
     .venue-info-content {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        align-items: center;
     }
     .venue-info-image, .venue-info-details {
         max-width: 100%;
+        margin-top: 20px;
     }
     .venue-details h3 {
         font-size: 3em;

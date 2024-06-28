@@ -4,8 +4,9 @@ import RSVPform from '../components/RSVPform.astro';
 const pageTitle = "R.S.V.P.";
 import '../styles/global.css'
 import MainLayout from '../layouts/MainLayout.astro';
+const title = "R.S.V.P.";
 ---
-<MainLayout>
+<MainLayout title={title}>
 	<section class="hero-rsvp">
 		<img src="/Kiss.jpg" alt="Kiss">
 		<div class="hero-overlay-rsvp">

@@ -77,10 +77,13 @@
       right: 10px;
   }
   .hero-text {
-      font-size: 5em;
+      font-size: 2em;
+  }
+  .hero-text-registry {
+    font-size: 5em;
   }
   .hero-overlay-registry {
-    bottom: 600px;
-    right: -75px;
+    bottom: 460px;
+    right: 30px;
   }
 }
