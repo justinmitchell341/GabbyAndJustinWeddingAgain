@@ -1,17 +1,18 @@
-.hero-faq img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.hero-overlay-faq {
-    position: absolute;
-    bottom: -100px; /* Adjust to overlap the next section */
-    left: 800px; /* Adjust to move the text to the right */
-    z-index: 10; /* Ensure the text is above other elements */
-}
-
-.hero-text-faq {
+.heroBGfaq{
+    background-image: url("/Spin.jpg");
+    font-family: "Great Vibes", serif;
+    height: 975px;
+    min-height: 975px;
+    background-size:cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    width: 1280px;
+  }
+  
+  .hero-text-faq {
     font-size: 10em;
     font-family: 'Great Vibes', serif;
     background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
@@ -21,7 +22,8 @@
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
-}
+    margin-bottom: 0px;
+  }
 
 .faq {
     padding: 40px 20px;
@@ -63,11 +65,25 @@
         font-size: 1em;
         margin: 10px 0;
     }
-    .hero-overlay-faq {
-        bottom: -60px;
-        left: 150px;
-    }
-    .hero-text-faq {
+    .heroBGfaq{
+        background-image: none;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+      }
+      .hero-faq{
+        height: 200px;
+        margin: 0px;
+        padding: 0px;
+        background-color: #2e4559;
+      }
+      .hero-text-faq{
+        margin-top: 0px;
+        padding-top: 10%;
         font-size: 5em;
-    }
+        padding-right: 0px;
+        padding-right: 10px;
+      }
 }

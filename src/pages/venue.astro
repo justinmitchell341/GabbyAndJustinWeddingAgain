@@ -1,19 +1,19 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 const title = "Venue";
+import '../styles/venue.css';
 ---
 
 <MainLayout title={title}>
-    <section class="hero">
-        <img src="/PatsyClarkMansion.jpg" alt="Patsy Clark Mansion">
-        <div class="hero-overlay-venue">
+    <section class="hero-venue">
+        <div class="heroBGvenue">
             <h1 class="hero-text-venue">Venue</h1>
         </div>
     </section>
+
     <section class="venue">
         <div class="venue-content">
             <div class="venue-details">
-                <h3>History</h3>
                 <p>Patsy Clark was born in Ireland in 1852 on St. Patrick's Day. At 18, he made his way to America aboard the SS Marathon. Arriving in New York with just a few dollars to his name, Patsy set off for the west to make his fortune. This hard-working young man devoted his energy and attention to the mining business and, by the time he was in his late 20s, Patsy was one of the best-known mining men in the United States.</p>
                 <div class="imageandp1">
                     <img class="venue-image" src="/PatsyClarkStairs.jpg" alt="Patsy Clark Mansion stairs">

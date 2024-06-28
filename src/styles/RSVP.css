@@ -11,7 +11,18 @@
     right: 600px; /* Adjust to move the text to the right */
     z-index: 10; /* Ensure the text is above other elements */
 }
-
+.heroBGRSVP{
+    background-image: url("/Kiss.jpg");
+    font-family: "Great Vibes", serif;
+    height: 975px;
+    min-height: 975px;
+    background-size:cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
 .hero-text-rsvp {
     font-size: 10em;
     font-family: 'Great Vibes', serif;
@@ -21,6 +32,7 @@
     line-height: 1;
     padding-right: 50px;
     padding-top: 20px;
+    margin-bottom: 0px;
 }
 
 .form-div{
@@ -104,4 +116,14 @@ input[type="radio"] {
     .hero-overlay-rsvp{
         bottom: 525px;
     }
+    .heroBGRSVP{
+        background-image: none;
+        background-color: #2e4559;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+      }
+      .hero-rsvp{
+        height: 250px;
+      }
 }

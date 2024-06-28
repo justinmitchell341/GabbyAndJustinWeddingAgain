@@ -1,14 +1,15 @@
-.hero-registry img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.hero-overlay-registry {
-  position: absolute;
-  bottom: 180px; /* Adjust to overlap the next section */
-  right: 600px; /* Adjust to move the text to the right */
-  z-index: 10; /* Ensure the text is above other elements */
+.heroBGregistry{
+  background-image: url("/CloseFlowers.jpg");
+  font-family: "Great Vibes", serif;
+  height: 975px;
+  min-height: 975px;
+  background-size:cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  width: 1280px;
 }
 
 .hero-text-registry {
@@ -21,6 +22,7 @@
   padding-right: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 
@@ -72,18 +74,20 @@
 }
 
 @media (max-width: 768px) {
-  .hero-overlay {
-      bottom: 10px;
-      right: 10px;
+  .heroBGregistry{
+    background-image: none;
+    background-color: #2e4559;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
   }
-  .hero-text {
-      font-size: 2em;
+  .hero-registry{
+    height: 200px;
   }
-  .hero-text-registry {
+  .hero-text-registry{
+    margin-top: 0px;
+    padding-top: 10%;
     font-size: 5em;
-  }
-  .hero-overlay-registry {
-    bottom: 460px;
-    right: 30px;
+    padding-right: 0px;
   }
 }
