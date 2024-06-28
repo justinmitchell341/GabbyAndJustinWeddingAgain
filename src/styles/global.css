@@ -40,9 +40,14 @@ header {
     font-size: 1.2em;
 }
 .heroBG{
+    font-family: "Great Vibes", serif;
     background-image: url('/JustinAndGabbyLake.jpg');
     height: 975px;
     background-size: contain;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
 
 }
 
@@ -125,25 +130,27 @@ nav ul li a {
     padding-right: 40px; /* Add padding to prevent text from being cut off */
 }
 
-.hero-overlay .name {
+.name {
     font-size: 10em;
     margin: 0;
-    position: relative; /* Ensure it's above the ampersand */
-    z-index: 2; /* Higher z-index to be above the ampersand */
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
     background: linear-gradient(90deg, #CB9B51 0%, #F6E27A 0%, #F6F2C0 52%, #F6E27A 69%, #CB9B51 100%);
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.hero-overlay .ampersand {
+.ampersand {
+    font-size: 5em; /* Make it larger */
+    opacity: 0.5; /* Slightly opaque */
+    position: absolute;
+    color: transparent;
     font-size: 20em; /* Make it larger */
     position: absolute;
-    right: 0; /* Adjust as needed */
-    bottom: -300px; /* Move it further down */
-    z-index: 2; /* Lower z-index to be behind the names */
-    opacity: 0.5; /* Slightly opaque */
-    color: transparent;
-    padding-right: 50px;
+    right: 0px; /* Adjust as needed */
+    bottom: -350px;
+    padding: 50px;
     background: white;
     -webkit-background-clip: text;
 }
