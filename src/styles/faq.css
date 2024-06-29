@@ -1,8 +1,8 @@
 .heroBGfaq{
     background-image: url("/Spin.jpg");
     font-family: "Great Vibes", serif;
-    height: 975px;
-    background-size:cover;
+    height: 795px;
+    background-size:contain;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -23,7 +23,7 @@
     line-height: 1;
     padding-right: 50px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-bottom: 0px;
   }
 

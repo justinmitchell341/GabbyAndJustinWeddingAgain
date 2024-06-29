@@ -89,9 +89,8 @@ nav ul li a {
 .heroBGvenue {
     background-image: url("/PatsyClarkMansion.jpg");
     font-family: "Great Vibes", serif;
-    height: 975px;
-    min-height: 975px;
-    background-size: cover;
+    height: 750px;
+    background-size: contain;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -111,6 +110,7 @@ nav ul li a {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 0px;
+    padding-left: 10px;
 }
 
 .venue {
@@ -147,6 +147,7 @@ nav ul li a {
     margin-left: 60px;
     margin-bottom: 30px;
     max-height: 350px;
+    border-radius: 10px;
 }
 
 .imageandp2 img {
@@ -265,5 +266,8 @@ nav ul li a {
     .venue-info-image, .venue-info-details {
         max-width: 100%;
         margin-top: 20px;
+    }
+    .venue-info-details p{
+        text-align: center;
     }
 }

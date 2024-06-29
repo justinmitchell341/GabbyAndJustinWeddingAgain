@@ -10,14 +10,14 @@
 }
 
 .accommodations {
-    padding: 40px 20px;
+    /* padding: 40px 20px; */
 }
 
 .heroBGaccommodations{
     background-image: url("/RiverFrontPark.jpg");
     font-family: "Great Vibes", serif;
-    height: 975px;
-    background-size:cover;
+    height: 725px;
+    background-size:contain;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;

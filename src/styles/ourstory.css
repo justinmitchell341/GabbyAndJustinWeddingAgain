@@ -1,8 +1,8 @@
 .heroBGStory{
   background-image: url("/Proposal.jpg");
   font-family: "Great Vibes", serif;
-  height: 975px;
-  background-size:cover;
+  height: 885px;
+  background-size:contain;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
