@@ -2,7 +2,6 @@
   background-image: url("/CloseFlowers.jpg");
   font-family: "Great Vibes", serif;
   height: 975px;
-  min-height: 975px;
   background-size:cover;
   display: flex;
   justify-content: flex-end;
@@ -78,14 +77,19 @@
     background-image: none;
     background-color: #2e4559;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     width: 100%;
+    max-height: 200px;
+    padding: 0px;
+    margin: 0px;
   }
   .hero-registry{
     height: 200px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .hero-text-registry{
-    margin-top: 0px;
     padding-top: 10%;
     font-size: 5em;
     padding-right: 0px;
