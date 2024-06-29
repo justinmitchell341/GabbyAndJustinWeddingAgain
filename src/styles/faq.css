@@ -6,7 +6,7 @@
     background-size:cover;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     background-repeat: no-repeat;
     width: 1280px;

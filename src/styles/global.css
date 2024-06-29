@@ -145,7 +145,6 @@ nav ul li a {
 }
 
 .ampersand {
-    font-size: 5em; /* Make it larger */
     opacity: 0.5; /* Slightly opaque */
     position: absolute;
     color: transparent;
@@ -415,10 +414,18 @@ a {
 }
 
 @media (max-width: 768px) {
+    html, body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
     body {
         overflow-x: hidden;
+        max-width: 100%;
     }
-
+    footer{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
     #nav-menu {
         display: none;
     }
@@ -426,20 +433,28 @@ a {
     .heroBG {
         background-image: none;
         background-color: #2e4559;
-        align-items: flex-start;
-        justify-content: flex-start;
+        align-items: center;
+        justify-content: center;
         width: 100%;
+        max-height: 200px;
     }
 
     .name {
         margin-top: 20px;
-        margin-left: 40px;
+        font-size: 7em;
     }
-
     .hero {
-        height: 475px;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
-
+    #global-button{
+        box-shadow: none;
+    }
+    .details-image img{
+        box-shadow: none;
+    }
     #nav-menu.open {
         display: block;
     }
@@ -450,15 +465,19 @@ a {
 
     header {
         font-size: 1em;
+        overflow-x: hidden;
+        max-width: 100%;
     }
 
     .header-content {
         flex-direction: column;
         text-align: center;
+        margin: 0px;
     }
 
     .love {
         padding-bottom: 10px;
+        padding-top: 10px;
     }
 
     nav ul {
@@ -466,17 +485,14 @@ a {
         gap: 10px;
     }
 
-    .hero-overlay .name {
-        font-size: 5em;
-    }
-
-    .hero-overlay .ampersand {
-        font-size: 10em;
-        bottom: -150px;
+    .ampersand{
+        font-size: 15em;
+        bottom: -200px;
     }
 
     .intro-content h2 {
         margin-bottom: 10px;
+        font-size: 2em;
     }
 
     .intro-content, .registry-content, .details-content {
@@ -507,8 +523,9 @@ a {
         width: 100%;
     }
 
-    .intro-content p {
-        margin: 0 5%;
+    .intro-content{
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
     .imageandp1 img, .imageandp2 img {
@@ -517,8 +534,20 @@ a {
 
     .imageandp2 img {
         margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+    .imageandp2{
 
+    }
+    .registry-content p{
+        margin-left: 0px;
+    }
+    .registry-content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .registry {
         flex-direction: column-reverse;
     }
@@ -538,8 +567,6 @@ a {
 
     .registry-image img {
         max-width: 100%;
-        margin-top: 20px;
-        background-color: #fff;
     }
 
     .wedding-details h2 {
@@ -549,7 +576,9 @@ a {
     .map-button, .hotels-button {
         width: 100%;
     }
-
+    .registry-image img {
+        max-width: 100%;
+    }
     .venue-info-content {
         flex-direction: column-reverse;
         align-items: center;
