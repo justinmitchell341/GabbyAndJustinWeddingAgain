@@ -244,6 +244,7 @@ nav ul li a {
     .imageandp1 img, .imageandp2 img {
         max-width: 100%;
         margin: 0;
+        border-radius: 10px;
     }
     .imageandp1 img{
         float: none;
@@ -257,6 +258,9 @@ nav ul li a {
     .venue-info-content {
         flex-direction: column-reverse;
         align-items: center;
+    }
+    .venue-info-details{
+        padding-left: 0px;
     }
     .venue-info-image, .venue-info-details {
         max-width: 100%;

@@ -45,7 +45,6 @@ header {
     font-family: "Great Vibes", serif;
     background-image: url('/JustinAndGabbyLake.jpg');
     height: 975px;
-    min-height: 975px;
     background-size: cover;
     display: flex;
     justify-content: flex-end;
@@ -220,7 +219,7 @@ footer {
 
 footer p {
     margin-top: 0px;
-    width: 80%;
+    width: 75%;
 }
 
 .registry {
@@ -316,6 +315,11 @@ footer p {
     padding: 0;
     font-family: 'Amiri', serif;
     text-align: left;
+    text-align: center;
+}
+
+.wedding-details{
+    text-align: center;
 }
 
 .details-wrapper {
@@ -443,7 +447,8 @@ a {
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-height: 200px;
+        max-height: 400px;
+        padding-top: 30px;
     }
 
     .name {
@@ -461,6 +466,7 @@ a {
     }
     #global-button{
         box-shadow: none;
+        padding: 20px 80px;
     }
     .details-image img{
         box-shadow: none;
@@ -472,11 +478,16 @@ a {
     .hamburger-icon {
         display: block;
     }
-
+    .detailsAndTitle{
+        padding-left: 0px;
+    }
     header {
         font-size: 1em;
         overflow-x: hidden;
-        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0px;
     }
 
     .header-content {
@@ -508,7 +519,10 @@ a {
     .intro-content, .registry-content, .details-content {
         padding: 10px;
     }
-
+    .details-content a{
+        display: flex;
+        justify-content: center;
+    }
     .details-wrapper {
         flex-direction: column;
     }
