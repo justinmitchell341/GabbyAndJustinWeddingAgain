@@ -212,21 +212,28 @@ nav ul li a {
     body {
         overflow-x: hidden;
     }
+    header{
+        font-size: 1em;
+    }
     .heroBGvenue {
         background-image: none;
         background-color: #2e4559;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
+        max-height: 200px;
     }
     .hero-venue {
-        height: 200px;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
     }
     .hero-text-venue {
-        margin-top: 0px;
         padding-top: 10%;
         font-size: 5em;
         padding-right: 10px;
+        padding-left: 3px;
     }
     .venue-details h3 {
         font-size: 3em;
@@ -237,6 +244,15 @@ nav ul li a {
     .imageandp1 img, .imageandp2 img {
         max-width: 100%;
         margin: 0;
+    }
+    .imageandp1 img{
+        float: none;
+    }
+    .imageandp1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
     }
     .venue-info-content {
         flex-direction: column-reverse;

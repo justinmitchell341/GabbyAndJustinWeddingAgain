@@ -17,7 +17,6 @@
     background-image: url("/RiverFrontPark.jpg");
     font-family: "Great Vibes", serif;
     height: 975px;
-    min-height: 975px;
     background-size:cover;
     display: flex;
     justify-content: flex-end;
@@ -123,22 +122,22 @@
 @media (max-width: 768px) {
     .heroBGaccommodations{
         background-image: none;
+        background-color: #2e4559;
         align-items: center;
-        justify-content: flex-start;
-        margin: 0px;
-        padding: 0px;
+        justify-content: center;
         width: 100%;
+        max-height: 200px;
+        padding: 0px;
+        margin: 0px;
       }
       .hero-accommodations{
         height: 200px;
-        margin: 0px;
-        padding: 0px;
-        background-color: #2e4559;
+        justify-content: center;
+        align-items: center;
+        display: flex;
       }
       .hero-text-accommodations{
-        margin-top: 0px;
-        padding-top: 10%;
-        font-size: 5em;
+        font-size: 4em;
         padding-right: 0px;
       }
     .hotel {
@@ -152,13 +151,19 @@
     }
     .accommodations p {
         margin: 10px 5%;
+        text-align: center;
     }
-    .hero-overlay{
-        bottom: -75px;
-        left: 10px;
-
-    } 
     .accommodations h2{
         font-size: 1.25em;
+    }
+    .hotel-p{
+        display: none
+    }
+    #rightImageHotel{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bold{
+        font-weight: bold;
     }
 }

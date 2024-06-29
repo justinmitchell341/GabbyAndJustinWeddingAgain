@@ -424,7 +424,6 @@ a {
     }
     footer{
         max-width: 100%;
-        overflow-x: hidden;
     }
     #nav-menu {
         display: none;
@@ -442,6 +441,9 @@ a {
     .name {
         margin-top: 20px;
         font-size: 7em;
+    }
+    main{
+        padding-top: 10px;
     }
     .hero {
         height: 400px;
@@ -537,9 +539,6 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-    .imageandp2{
-
     }
     .registry-content p{
         margin-left: 0px;
