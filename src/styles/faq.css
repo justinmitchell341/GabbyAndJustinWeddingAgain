@@ -53,13 +53,13 @@
 .faq .question {
     font-weight: bold;
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 .faq .answer {
     margin-left: 20px;
     margin-bottom: 20px;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 @media (max-width: 768px) {

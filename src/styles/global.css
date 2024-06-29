@@ -95,7 +95,9 @@ nav ul li a {
     color: #333;
     font-weight: bold;
 }
-
+nav ul li a:hover {
+    color: #5A86AD;
+}
 .countdown {
     display: flex;
     justify-content: center;
@@ -424,6 +426,8 @@ a {
     }
     footer{
         max-width: 100%;
+        margin-top: 20px;
+        padding: 0px;
     }
     #nav-menu {
         display: none;
