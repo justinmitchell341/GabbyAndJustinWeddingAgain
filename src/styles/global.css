@@ -474,7 +474,6 @@ a {
     }
     #global-button{
         box-shadow: none;
-        padding: 20px 80px;
     }
     .details-image img{
         box-shadow: none;
@@ -606,9 +605,11 @@ a {
     .wedding-details h2 {
         font-size: 2em;
     }
-
-    .map-button, .hotels-button {
-        width: 100%;
+    .details-content button{
+        padding: 20px 40px;
+    }
+    .details-content .map-button, .details-content .hotels-button {
+        width: 70%;
     }
     .registry-image img {
         max-width: 100%;
