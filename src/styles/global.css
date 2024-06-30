@@ -469,6 +469,9 @@ a {
         align-items: center;
         display: flex;
     }
+    .map-button{
+        box-shadow: none;
+    }
     #global-button{
         box-shadow: none;
         padding: 20px 80px;
@@ -517,10 +520,12 @@ a {
     }
     .intro-content p{
         padding-bottom: 10px;
+        text-align: center  ;
     }
     .intro-content h2 {
         margin-bottom: 10px;
         font-size: 2em;
+        text-align: center;
     }
 
     .intro-content, .registry-content, .details-content {
@@ -567,6 +572,11 @@ a {
     }
     .registry-content p{
         margin-left: 0px;
+        max-width: 90%;
+        text-align: center  ;
+    }
+    .buttons{
+        max-width: 90%;
     }
     .registry-content{
         margin-left: 10px;

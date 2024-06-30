@@ -270,4 +270,7 @@ nav ul li a {
     .venue-info-details p{
         text-align: center;
     }
+    .map-button{
+        box-shadow: none;
+    }
 }
