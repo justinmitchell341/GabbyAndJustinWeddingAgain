@@ -241,6 +241,7 @@ nav ul li a {
     }
     .venue-details p {
         font-size: 1.2em;
+        text-align: center;
     }
     .imageandp1 img, .imageandp2 img {
         max-width: 100%;
