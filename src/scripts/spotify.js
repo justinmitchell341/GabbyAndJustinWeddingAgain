@@ -1,5 +1,5 @@
 import { db } from './firebase.js';
-import { collection, addDoc } from 'firebase/firestore';
+import { collection, addDoc, query, where, getDocs } from 'firebase/firestore';
 
 const clientId = import.meta.env.PUBLIC_SPOTIFY_CLIENT_ID;
 const clientSecret = import.meta.env.PUBLIC_SPOTIFY_CLIENT_SECRET;
@@ -67,11 +67,17 @@ document.addEventListener('DOMContentLoaded', () => {
       artists: trackArtists
     };
     console.log('Track data to be added:', trackData); // Log the data being sent to Firestore
+    const q = query(collection(db, "songs"), where("id", "==", trackId));
+    const querySnapshot = await getDocs(q);
+    if (!querySnapshot.empty) {
+      alert('Thanks for submitting your song request!');
+      return;
+    }
 
     try {
       const docRef = await addDoc(collection(db, "songs"), trackData);
       console.log("Document written with ID: ", docRef.id);
-      alert('Track added to Firebase!');
+      alert('Thanks for submitting your song request!');
     } catch (e) {
       console.error("Error adding document: ", e);
     }
