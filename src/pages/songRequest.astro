@@ -1,0 +1,26 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import '../styles/songRequest.css';
+const title = "Song Requests";
+---
+
+<MainLayout title={title}>
+  <section class="hero-song">
+    <div class="heroBGsong">
+      <h1 class="hero-text-song">Song Requests</h1>
+    </div>
+  </section>
+
+  <section class="song-request">
+    <h3>We want our special day to be as memorable and enjoyable as possible, and that includes the music. If there's a song that holds a special place in your heart or gets you dancing, let us know! Simply search for your favorite tracks and add them to our playlist. We can't wait to celebrate with you.</h3>
+    <div class="requestDiv">
+      <input type="text" id="searchInput" placeholder="Search for a song" />
+      <button id="global-button">Search</button>
+      <div id="results"></div>
+    </div>
+  </section>
+
+  <!-- Import Firebase and Spotify scripts -->
+  <script type="module" src="/src/scripts/firebase.js"></script>
+  <script type="module" src="/src/scripts/spotify.js"></script>
+</MainLayout>
