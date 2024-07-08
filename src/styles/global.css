@@ -292,6 +292,7 @@ footer p {
     font-family: 'Amiri', serif;
     border-radius: 5px;
     border: 1px solid #000;
+    box-shadow: 3px 5px 9px #2e4559;
 }
 
 .buttons button:hover {
